@@ -155,19 +155,19 @@ header {
 /* Front-end-developer */
 
 .web-developer {
-	background-image: url("https://s26.postimg.cc/fj08g40jt/DSC_4868_finala_cu_crop_-min.jpg");
+	background-image: url("/img/front_img.jpg") ;
 	background-position: center center;
-	background-attachment: fixed;
-	background-repeat: no-repeat;
 	background-size: cover;
 	width: 100%;
 	height: 271px;
 	padding-top: 85px;
-	text-align: center;
 }
 
 .web-developer .text-box {
 	height: 130px;
+	width:500px;
+	text-align:right;
+	margin-left: 50%;
 }
 
 .web-developer .text-box h2 {
@@ -184,8 +184,8 @@ header {
 }
 
 .web-developer .text-box hr {
-	margin: 0 auto;
-	width: 26%;
+	margin-left: 65%;
+    width: 35%;
 	border: 1px solid #e6b800;
 }
 
@@ -342,16 +342,83 @@ header {
 		width: 295px;
 		margin-bottom: 5px;
 	}
+	.web-developer .text-box {
+		width: 300px;
+		margin-left: -1%;
+	}
+	.web-developer .text-box h2 {
+		font-size: 25px;
+		margin-top: -65px;
+		padding:0;
+	}
+
+	.web-developer .text-box hr {
+		margin-left: 30%;
+		width: 69%;
+	}
+
+	.web-developer .text-box h4 {
+		font-size: 13px;
+		padding:0;
+	}
+
+	.recent-projects-title .recent-header h2 {
+		font-size: 25px;
+	}
+
+	.recent-projects-work .subsections h2 {
+		font-size: 22px;
+	}
+	
+}
+
+@media screen and (min-width:360px){
+	.navbar .navbar-brand img {
+		width: 330px;
+	}
+	.web-developer .text-box {
+		margin-left: 9%;
+	}
+}
+
+@media screen and (min-width:380px){
+	.navbar .navbar-brand img {
+		width: 275px;
+	}
+	.web-developer .text-box {
+		margin-left: 16%;
+	}
+}
+
+@media screen and (min-width:400px){
+	.navbar .navbar-brand img {
+		width: 300px;
+	}.web-developer .text-box {
+		margin-left: 22%;
+	}
 
 	
 }
+
+
+
 
 @media screen and (min-width:320px) and (max-width:400px){
 	.navbar-dark .navbar-toggler {
 		margin:auto;
 	}
+	.web-developer .text-box {
+		margin-left: 34%;
+	}
 
 }
+@media screen and (min-width:480px) and (max-width:500px){
+	.web-developer .text-box {
+		margin-left: 23%;
+	}
+
+}
+
 @media only screen and (max-width:576px) {
 	.footer-section ul .copyright {
 		margin: 0 auto;
@@ -370,3 +437,42 @@ header {
 	}
 
 }
+
+@media screen and (min-width:501px) and (max-width:599px){
+	.web-developer .text-box {
+		margin-left: 41%;
+	}
+
+}
+
+
+@media screen and (min-width: 600px) and (max-width:767px){
+	.web-developer .text-box {
+		margin-left: 47%;
+	}
+		
+
+}
+
+
+
+@media screen and (min-width: 768px){
+	.web-developer .text-box {
+		width: 583px;
+	}
+	.web-developer .text-box h2 {
+		margin-right: 85px;
+	}
+
+	.web-developer .text-box h2 {
+		font-size: 30px;
+	}
+
+	.web-developer .text-box hr {
+		margin-left: 25%;
+    	width: 75%;
+	}
+
+}
+
+
