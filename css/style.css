@@ -4,8 +4,12 @@
 	box-sizing: border-box;
 }
 
-body {
+html {
+	position: relative;
+}
 
+body {
+	position: relative;
 	font-family: "Open Sans", "lucida console", monospace;
 }
 
@@ -23,6 +27,7 @@ hr {
 	width: 26%;
 	border: 3px solid #bfbfbf;
 }
+
 header {
 	height: 110px;
 }
@@ -98,13 +103,13 @@ header {
 	margin: 30px 80px 20px 35px;
 	font-weight: bold;
 	text-decoration: none;
-	
+
 }
 
 .photography-section .col-text a {
 	color: #000;
 	text-decoration: none;
-	border:none;
+	border: none;
 }
 
 .photography-section .col-text a:hover {
@@ -143,7 +148,7 @@ header {
 /* Front-end-developer section */
 
 .web-developer {
-	background-image: url("https://i.postimg.cc/9fdjGBTx/front-img.jpg") ;
+	background-image: url("https://i.postimg.cc/9fdjGBTx/front-img.jpg");
 	background-position: center center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -152,8 +157,7 @@ header {
 }
 
 .web-developer .text-box {
-	height: 130px;
-	text-align:right;
+	text-align: right;
 	margin-left: 50%;
 	margin-top: 85px;
 }
@@ -173,7 +177,7 @@ header {
 
 .web-developer .text-box hr {
 	margin-left: 65%;
-    width: 35%;
+	width: 35%;
 	border: 1px solid #e6b800;
 }
 
@@ -321,19 +325,27 @@ header {
 /* Media Query */
 
 @media screen and (min-width:320px) {
-	
+	.navbar-toggler-icon {
+		width: 1.3em;
+		height: 1.3em;
+	}
+
 	.navbar .navbar-brand img {
-		width: 295px;
+		width: 215px;
 		margin-bottom: 5px;
 	}
+
 	.web-developer .text-box {
 		width: 300px;
 		margin-left: -1%;
+		margin-top: 60px;
+
 	}
+
 	.web-developer .text-box h1 {
-		font-size: 25px;
-		margin-top: -65px;
-		padding:0;
+		font-size: 23px;
+		/* margin-top: -65px; */
+		padding: 0;
 	}
 
 	.web-developer .text-box hr {
@@ -342,8 +354,8 @@ header {
 	}
 
 	.web-developer .text-box h4 {
-		font-size: 13px;
-		padding:0;
+		font-size: 11px;
+		padding: 0;
 	}
 
 	.recent-projects-title .recent-header h1 {
@@ -353,46 +365,59 @@ header {
 	.recent-projects-work .subsections h2 {
 		font-size: 22px;
 	}
-	
+
 }
 
-@media screen and (min-width:360px){
+@media screen and (min-width:360px) {
 	.navbar .navbar-brand img {
-		width: 330px;
+		width: 255px;
 	}
+
 	.web-developer .text-box {
 		margin-left: 9%;
 	}
 }
 
-@media screen and (min-width:380px){
+@media screen and (min-width:380px) {
 	.navbar .navbar-brand img {
 		width: 275px;
 	}
+
 	.web-developer .text-box {
-		margin-left: 16%;
+		margin-left: 17%;
+		margin-top: 64px;
+	}
+
+	.web-developer .text-box h1 {
+		font-size: 25px;
+
+	}
+
+	.web-developer .text-box h4 {
+		font-size: 12px;
 	}
 }
 
-@media screen and (min-width:400px){
+@media screen and (min-width:400px) {
 	.navbar .navbar-brand img {
 		width: 300px;
 	}
+
 	.web-developer .text-box {
 		margin-left: 22%;
 	}
 }
 
-@media screen and (min-width:320px) and (max-width:400px){
+@media screen and (min-width:320px) and (max-width:400px) {
 	.navbar-dark .navbar-toggler {
-		margin:auto;
+		margin: auto;
 	}
-	
+
 }
 
-@media screen and (min-width:480px) and (max-width:500px){
+@media screen and (min-width:480px) and (max-width:500px) {
 	.web-developer .text-box {
-		margin-left: 23%;
+		margin-left: 33%;
 	}
 
 }
@@ -415,67 +440,98 @@ header {
 
 }
 
-@media screen and (min-width:501px) and (max-width:599px){
+@media screen and (min-width:501px) and (max-width:599px) {
 	.web-developer .text-box {
-		margin-left: 38%
+		margin-left: 38%;
+	}
+
+	.web-developer .text-box h1 {
+		font-size: 26px;
+	}
+
+	.web-developer .text-box h4 {
+		font-size: 13px;
 	}
 
 }
 
 
-@media screen and (min-width: 600px) and (max-width:767px){
+@media screen and (min-width: 600px) and (max-width:767px) {
 	.web-developer .text-box {
 		margin-left: 47%;
 	}
-		
+
 
 }
 
 
 
-@media screen and (min-width: 768px){
-	header{
-	background: url("https://s14.postimg.cc/58vhc3ssx/X1002803.jpg");
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	width: 100%;
-	height: 455px;
+@media screen and (min-width: 768px) {
+	header {
+		background: url("https://i.postimg.cc/yNMm0bmm/X1002803.jpg");
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		/* background-attachment: fixed; */
+		width: 100%;
+		height: 455px;
 	}
+
 	.web-developer .text-box {
-		width: 570px;
+		width: 540px;
+		margin-left: 28%;
 	}
+
 	.web-developer .text-box h1 {
-		margin-right: 85px;
+		margin-right: 3px;
 		font-size: 30px;
 	}
 
 	.web-developer .text-box hr {
-		margin-left: 25%;
-    	width: 75%;
+		margin-left: 37%;
+		width: 62%;
 	}
 
 }
 
-@media screen and (min-width:992px){
-.photography-section .col-text h3 {
-	font-size: 20px;
-}
-.web-developer .text-box {
-    margin-left: 40%;
-}
-.web-developer .text-box h1 {
-    font-size: 35px;
-}
-.photography-section .coltext1 h3{
-	font-size:30px;
-}
+@media screen and (min-width:992px) {
+	.photography-section .col-text h3 {
+		font-size: 20px;
+	}
 
-}
-
-@media screen and (min-width: 1200px){
 	.web-developer .text-box {
-		margin-left: 50%;
+		margin-left: 44%;
+		margin-top: 77px;
+	}
+
+	.web-developer .text-box h1 {
+		margin-right: 3px;
+		font-size: 35px;
+	}
+
+	.photography-section .coltext1 h3 {
+		font-size: 30px;
+	}
+
+}
+
+@media screen and (min-width:1080px){
+	.web-developer .text-box {
+		margin-left: 49%;
+	}
+
+	.web-developer .text-box hr {
+		margin-left: 27%;
+		width: 72%;
+	}
+
+
+
+}
+
+@media screen and (min-width:1200px) {
+	.web-developer .text-box {
+		margin-left: 54%;
 	}
 
 	.web-developer .text-box h1 {
@@ -483,25 +539,41 @@ header {
 	}
 
 	.web-developer .text-box hr {
-		margin-left: 11%;
-		width: 89%;
+		margin-left: 20%;
+		width: 79%;
 	}
 
 }
 
-@media screen and (min-width: 1400px){
+
+
+@media screen and (min-width:1366px) {
+	.web-developer .text-box {
+		margin-left: 58%;
+	}
+
+	.web-developer .text-box hr {
+		margin-left: 20%;
+		/* width: 79%; */
+	}
+
+}
+
+
+
+@media screen and (min-width: 1400px) {
+	header {
+		background-attachment: fixed;
+	}
+
 	.web-developer .text-box {
 		margin-left: 58%;
 	}
 
 }
 
-@media screen and (min-width: 1400px){
+@media screen and (min-width: 1600px) {
 	.web-developer .text-box {
-		margin-left: 63%;
+		margin-left: 65%;
 	}
-
 }
-
-
-
