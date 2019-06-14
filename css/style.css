@@ -163,6 +163,7 @@ header {
 }
 
 .web-developer .text-box h1 {
+	font-weight:bold;
 	font-size: 45px;
 	color: #808080;
 	padding-bottom: 15px;
@@ -343,8 +344,7 @@ header {
 	}
 
 	.web-developer .text-box h1 {
-		font-size: 23px;
-		/* margin-top: -65px; */
+		font-size: 18px;
 		padding: 0;
 	}
 
@@ -354,7 +354,7 @@ header {
 	}
 
 	.web-developer .text-box h4 {
-		font-size: 11px;
+		font-size: 10px;
 		padding: 0;
 	}
 
@@ -384,17 +384,18 @@ header {
 	}
 
 	.web-developer .text-box {
+
 		margin-left: 17%;
 		margin-top: 64px;
 	}
 
 	.web-developer .text-box h1 {
-		font-size: 25px;
+		font-size: 20px;
 
 	}
 
 	.web-developer .text-box h4 {
-		font-size: 12px;
+		font-size: 11px;
 	}
 }
 
@@ -423,6 +424,7 @@ header {
 }
 
 @media only screen and (max-width:576px) {
+	
 	.footer-section ul .copyright {
 		margin: 0 auto;
 
@@ -442,7 +444,9 @@ header {
 
 @media screen and (min-width:501px) and (max-width:599px) {
 	.web-developer .text-box {
-		margin-left: 38%;
+		margin-left: 35%;
+		width: 310px;
+		
 	}
 
 	.web-developer .text-box h1 {
@@ -459,6 +463,11 @@ header {
 @media screen and (min-width: 600px) and (max-width:767px) {
 	.web-developer .text-box {
 		margin-left: 47%;
+		width: 310px;
+	}
+
+	.web-developer .text-box h1 {
+		font-size: 26px;
 	}
 
 
