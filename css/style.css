@@ -32,6 +32,14 @@ header {
 	height: 110px;
 }
 
+.hidden{
+	display:none;
+}
+
+.reveal{
+	display:initial;
+}
+
 /* NAV */
 .navbar {
 	background: #1a1a1a;
@@ -217,6 +225,8 @@ header {
 .recent-projects-work {
 	background: #f2f2f2;
 	text-align: center;
+	padding-bottom: 100px;
+	
 }
 
 .recent-projects-work .subsections img {
@@ -265,63 +275,49 @@ header {
 	opacity: 0.6;
 }
 
-/* FOOTER */
-
-
-.footer-section .footer-hr {
-	width: 100%;
-	border: 9px solid #e6e6e6;
-	margin: 0 auto;
-
+/* CONTACT */
+#contact{
+	position:fixed;
+	bottom: 0;
+	width:100%;
+	padding:20px 0px 20px 0px;
+	background-color: #ece9e9;
+}
+#contact ul{
+	text-align:center;
+}
+#contact ul li{
+	list-style:none;
+	display:inline-block;
+	color: #666666;
 }
 
-
-.footer-section {
-
-	background: #f2f2f2;
-	text-align: center;
-	height: 400px;
-
-
+#contact ul li:hover{
+	text-decoration: none;
+}
+#contact ul h4{
+	font-size:20px;
+	color: #666666;
+	font-family: 'Saira Semi Condensed', sans-serif;
+	padding-left:20px;
+	padding-right:20px;
 }
 
-.footer-section ul li h4 {
-	color: #c1c0c0;
-	font-size: 13px;
-	font-family: sans-serif;
-	display: inline;
-
-}
-
-.footer-section ul {
-	text-align: center;
-	margin-top: 358px;
-	border-top: 1px solid #e6e6e6;
-	border-bottom: 1px solid #e6e6e6;
-
-}
-
-.footer-section ul li {
-	display: inline;
-
-}
-
-.footer-section ul .copyright {
-	padding-right: 9%;
-	/*    margin-left: 3%; */
-}
-
-.footer-section .bn-footer {
-	color: #c1c0c0;
-	font-size: 13px;
-	font-family: sans-serif;
-	padding: 10px;
+#contact ul li a{
 	text-decoration: none;
 }
 
-.footer-menu {
-	display: inline-block;
+#contact ul li .fa-angle-double-up,
+.fa-angle-double-down{
+	width:20px;
+	font-size:20px;
+	cursor:pointer;
 }
+
+
+
+
+
 
 /* Media Query */
 
@@ -423,24 +419,7 @@ header {
 
 }
 
-@media only screen and (max-width:576px) {
-	
-	.footer-section ul .copyright {
-		margin: 0 auto;
 
-	}
-
-	.footer-menu {
-		display: block;
-		margin-left: -9%;
-	}
-
-	.footer-section {
-		height: 425px;
-
-	}
-
-}
 
 @media screen and (min-width:501px) and (max-width:599px) {
 	.web-developer .text-box {
