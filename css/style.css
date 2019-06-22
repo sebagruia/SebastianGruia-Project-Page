@@ -276,45 +276,103 @@ header {
 }
 
 /* CONTACT */
+
+.contact-up{
+	height:93%;
+	width:100%;
+	position:fixed;
+	bottom: 0;
+	padding:20px 0px 20px 0px;
+	background-color: #ece9e9;
+}
 #contact{
+	/* height:93%; */
 	position:fixed;
 	bottom: 0;
 	width:100%;
 	padding:20px 0px 20px 0px;
 	background-color: #ece9e9;
 }
+
 #contact ul{
-	text-align:center;
+	padding-top: 5px;
 }
-#contact ul li{
+
+#contact ul,
+#contact2 ul{
+	text-align:center;
+	
+
+}
+
+#contact2 ul{
+	padding-top:15px;
+}
+
+#contact ul li,
+#contact2 ul li
+{
 	list-style:none;
 	display:inline-block;
 	color: #666666;
 }
 
-#contact ul li:hover{
+#contact ul li a .fas,
+#contact2 ul li a .fas
+{
 	text-decoration: none;
+	color: #666666;
+	
 }
-#contact ul h4{
+
+
+#contact ul h4,
+#contact2 ul h4
+{
 	font-size:20px;
 	color: #666666;
 	font-family: 'Saira Semi Condensed', sans-serif;
 	padding-left:20px;
 	padding-right:20px;
+	cursor:pointer;
 }
 
-#contact ul li a{
+#contact ul li a,
+#contact2 ul li a
+{
 	text-decoration: none;
 }
 
 #contact ul li .fa-angle-double-up,
-.fa-angle-double-down{
+.fa-angle-double-down,
+#contact2 ul li .fa-angle-double-up,
+.fa-angle-double-down
+{
 	width:20px;
 	font-size:20px;
-	cursor:pointer;
+}
+
+.form{
+	padding-top:10%;
 }
 
 
+.form-contact{
+	padding-left:10%;
+	font-family: 'Saira Semi Condensed', sans-serif;
+	
+}
+
+#about-me-section{
+	font-family: 'Saira Semi Condensed', sans-serif;
+
+}
+
+
+#about-me-section h3{
+	margin-bottom:20px;
+	
+}
 
 
 

@@ -28,3 +28,14 @@ $('.js--scroll-to-home').click(function () {
 
 });
 
+document.addEventListener('DOMContentLoaded', (ev1)=>{
+    console.log('Loaded');
+    const upArrow = document.get
+
+
+
+
+
+
+
+});
