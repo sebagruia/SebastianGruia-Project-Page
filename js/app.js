@@ -28,9 +28,37 @@ $('.js--scroll-to-home').click(function () {
 
 });
 
-document.addEventListener('DOMContentLoaded', (ev1)=>{
-    console.log('Loaded');
-    const upArrow = document.get
+document.addEventListener('DOMContentLoaded', function transform(ev1){
+    console.log('Loaded the DOM');
+    const up = document.querySelector('.move-up');
+    const down = document.querySelector('.move-down');
+    const contactDown = document.querySelector('.contact-down');
+    const contactUp = document.querySelector('.contact-up');
+    
+        up.addEventListener('click', ()=>{
+            
+                contactDown.classList.add('hidden');
+                contactUp.classList.remove('hidden');
+                
+            
+        });
+
+
+    
+
+    
+        down.addEventListener('click', ()=>{
+            
+                contactDown.classList.remove('hidden');
+                contactUp.classList.add('hidden');
+            
+        });
+
+  
+   
+
+   
+
 
 
 
