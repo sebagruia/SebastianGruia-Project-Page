@@ -28,7 +28,7 @@ $('.js--scroll-to-home').click(function () {
 
 });
 
-document.addEventListener('DOMContentLoaded', function transform(ev1){
+document.addEventListener('DOMContentLoaded', (ev1)=>{
     console.log('Loaded the DOM');
     const up = document.querySelector('.move-up');
     const down = document.querySelector('.move-down');
@@ -36,22 +36,11 @@ document.addEventListener('DOMContentLoaded', function transform(ev1){
     const contactUp = document.querySelector('.contact-up');
     
         up.addEventListener('click', ()=>{
-            
-                contactDown.classList.add('hidden');
-                contactUp.classList.remove('hidden');
-                
-            
+                contactUp.setAttribute('style', 'bottom:0px; transition: bottom 0.8s; -webkit-transition:bottom 0.8s; transition-timing-function:ease; -webkit-transition-timing-function:ease;');
         });
 
-
-    
-
-    
         down.addEventListener('click', ()=>{
-            
-                contactDown.classList.remove('hidden');
-                contactUp.classList.add('hidden');
-            
+                contactUp.setAttribute('style', 'bottom:-1000px; transition: bottom 0.8s; -webkit-transition:bottom 0.8s; transition-timing-function:ease; -webkit-transition-timing-function:ease;');
         });
 
   

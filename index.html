@@ -137,8 +137,6 @@
 
 
 		<div class="row recent-projects-work ">
-
-
 			<div class="col-lg-4 col-md-12 ">
 				<div class="subsections subsection1">
 					<a href="http://omnifood.sebastiangruia.ro/" target="_blank"><img
@@ -198,7 +196,7 @@
 			</div>
 		</div>
 
-		<section class="row contact-up hidden">
+		<section class="row contact-up">
 			<div class="col" id="contact2">
 				<ul>
 					<li><a href="#"><i class="fas fa-angle-double-down"></i></a></li>
@@ -224,18 +222,17 @@
 
 
 					<div class="col-sm-6">
-						<form class="form-contact">
+						<form class="form-contact ">
 							<div class="form-group">
 								<label for="inputName">Name*</label>
 								<input type="text" class="form-control" id="inputName" aria-describedby="namelHelp"
-									placeholder="How's your mother calling you?">
-
+									placeholder="How's your mother calling you?" required>
 							</div>
 
 							<div class="form-group">
 								<label for="inputEmail">E-mail adress*</label>
 								<input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp"
-									placeholder="Your precious e-mail here">
+									placeholder="Your precious e-mail here" required>
 								<small id="emailHelp" class="form-text text-muted">Don't worry I don't sell/share your
 									personal
 									info. I'm the good guy.</small>
@@ -243,7 +240,8 @@
 
 							<div class="form-group">
 								<label for="textInput">Your message*</label>
-								<textarea class="form-control" id="textInput" rows="5"></textarea>
+								<textarea class="form-control" id="textInput" rows="5" maxlength="1000" required></textarea>
+								
 
 							</div>
 							<button type="submit" class="btn btn-outline-dark">Hit me</button>
@@ -252,7 +250,7 @@
 				</div>
 		</section>
 
-	</div>
+	
 
 
 
