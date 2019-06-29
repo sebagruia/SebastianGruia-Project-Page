@@ -2,7 +2,7 @@
 	margin: 0;
 	padding: 0;
 	-webkit-box-sizing: border-box;
-	        box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 html {
@@ -30,7 +30,12 @@ hr {
 }
 
 header {
-	height: 110px;
+	background: url("https://i.postimg.cc/yNMm0bmm/X1002803.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 435px;
 }
 
 .hidden {
@@ -128,7 +133,7 @@ header {
 }
 
 .photography-section .coltext1 h3 {
-	margin: 5px 51px 19px 20px;
+	margin: 30px 51px 19px 20px;
 	font-variant: small-caps;
 	font-size: 35px;
 }
@@ -228,7 +233,7 @@ header {
 .recent-projects-work {
 	background: #f2f2f2;
 	text-align: center;
-	padding-bottom: 200px;
+	padding-bottom: 150px;
 
 }
 
@@ -237,7 +242,7 @@ header {
 	width: 100%;
 	opacity: 0.8;
 	-webkit-transform: scale(1);
-	        transform: scale(1);
+	transform: scale(1);
 	-webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
 	transition: opacity 0.5s, -webkit-transform 0.5s;
 	transition: transform 0.5s, opacity 0.5s;
@@ -247,7 +252,7 @@ header {
 .recent-projects-work img:hover {
 	opacity: 1.1;
 	-webkit-transform: scale(0.98);
-	        transform: scale(0.98);
+	transform: scale(0.98);
 }
 
 .recent-projects-work .subsections a {
@@ -293,7 +298,8 @@ header {
 	padding: 20px 0px 20px 0px;
 	background-color: #ece9e9;
 	overflow: scroll;
-	-webkit-transition:;	transition: heigth 0s;
+	-webkit-transition: heigth 0s;
+	transition: heigth 0s;
 }
 
 #contact {
@@ -434,6 +440,14 @@ header {
 
 }
 
+@media screen and (min-width:320px) and (max-width:768px) {
+	.photography-section .coltext4{
+		margin-bottom: 55px;
+
+	}
+
+}
+
 @media screen and (min-width:360px) {
 	.navbar .navbar-brand img {
 		width: 255px;
@@ -463,9 +477,9 @@ header {
 	.web-developer .text-box hr {
 		margin-left: 36%;
 		width: 63%;
-	}t
+	}
 
-	.web-developer .text-box h4 {
+	t .web-developer .text-box h4 {
 		font-size: 11px;
 	}
 }
@@ -551,14 +565,14 @@ header {
 
 
 @media screen and (min-width: 768px) {
-	header {
+	/* header {
 		background: url("https://i.postimg.cc/yNMm0bmm/X1002803.jpg");
 		background-position: center center;
 		background-repeat: no-repeat;
 		background-size: cover;
 		width: 100%;
-		height: 455px;
-	}
+		height: 435px;
+	} */
 
 	.web-developer .text-box {
 		width: 540px;
