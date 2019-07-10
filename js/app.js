@@ -39,12 +39,12 @@ document.addEventListener('DOMContentLoaded', (ev1) => {
     const textArea = document.querySelector('.textarea');
     console.log(textArea);
 
-    function contactTransition(){
+    function contactTransition() {
         up.addEventListener('click', () => {
             contactUp.setAttribute('style', 'bottom:0px; transition: bottom 0.8s; -webkit-transition:bottom 0.8s; transition-timing-function:ease; -webkit-transition-timing-function:ease;');
         });
-    
-    
+
+
         down.addEventListener('click', () => {
             contactUp.setAttribute('style', 'bottom:-1000px; transition: bottom 0.8s; -webkit-transition:bottom 0.8s; transition-timing-function:ease; -webkit-transition-timing-function:ease;');
         });
@@ -56,54 +56,29 @@ document.addEventListener('DOMContentLoaded', (ev1) => {
             doubleDown[i].addEventListener('click', () => {
                 contactUp.setAttribute('style', 'bottom:-1000px; transition: bottom 0.8s; -webkit-transition:bottom 0.8s; transition-timing-function:ease; -webkit-transition-timing-function:ease;');
             });
-    
+
         }
 
     }
 
-   function inputTransition(){
-    for (let i = 0; i < 3; i++) {
-        mask[i].addEventListener('mouseover', (event) => {
-            event.target.setAttribute('style', 'width:20%; transition: width 0.5s; -webkit-transition: width 0.5s; transition-timing-function:ease; -webkit-transition-timing-function:ease; ');
+    function inputTransition() {
+        for (let i = 0; i < 3; i++) {
+            mask[i].addEventListener('mouseover', (event) => {
+                event.target.setAttribute('style', 'width:20%; transition: width 0.5s; -webkit-transition: width 0.5s; transition-timing-function:ease; -webkit-transition-timing-function:ease; ');
+
+            });
+        }
+
+        textArea.addEventListener('click', () => {
+            textArea.setAttribute('rows', '5');
 
         });
+
+
+
     }
 
-    textArea.addEventListener('click', ()=>{
-        textArea.setAttribute('rows', '5');
-        // textArea.setAttribute('style', 'text-align:left');
-
-    });
-
-
-
-   }
-
-   contactTransition();
-   inputTransition();
-   
-  
-
-    // for (let i = 0; i < 3; i++) {
-    //     mask[i].addEventListener('mouseout', (event1) => {
-    //         event.target.setAttribute('style', 'width:100%; transition: width 0.5s; -webkit-transition: width 0.5s; transition-timing-function:ease; -webkit-transition-timing-function:ease; ');
-
-    //     });
-    // }
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
+    contactTransition();
+    inputTransition();
 
 });
