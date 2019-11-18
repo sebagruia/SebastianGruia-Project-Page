@@ -458,6 +458,16 @@ header {
 	.recent-projects-work .subsections h2 {
 		font-size: 22px;
 	}
+	.recent-projects-work .card {
+		width:80%;
+	}
+	.recent-projects-work .card .card-body h5{
+		margin-top: 12px!important;
+		margin-bottom: 12px;
+		color: #666666!important;
+		font-size: 25px!important;
+		font-family: sans-serif!important;
+	}
 
 	.contact-up {
 		overflow: scroll;
