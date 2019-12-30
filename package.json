@@ -1,0 +1,25 @@
+{
+  "name": "cv-page",
+  "version": "1.0.0",
+  "description": "[The link to the LandingPage](https://sebagruia.github.io/SebastianGruia-Project-Page/)",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "intro.js": "^2.9.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sebagruia/SebastianGruia-Project-Page.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sebagruia/SebastianGruia-Project-Page/issues"
+  },
+  "homepage": "https://github.com/sebagruia/SebastianGruia-Project-Page#readme"
+}

@@ -1,6 +1,9 @@
+
+  
 $(document).ready(function () {
 
-    /*Scroll on buttons*/
+   
+    /*Scroll on buttons using Jquery*/
     $('.js--scroll-to-home').click(function () {
 
         $('html, body').animate({
@@ -29,6 +32,10 @@ $(document).ready(function () {
 });
 
 document.addEventListener('DOMContentLoaded', (ev1) => {
+     /*Calls the Intro.Js plugin to the Page*/
+    //  introJs().start();
+    //  introJs.fn.oncomplete(function() { document.querySelector('.navbar').classList.add('.fixed-top')});
+    
     console.log('DOM loaded');
     const up = document.querySelector('.move-up');
     const down = document.querySelector('.move-down');

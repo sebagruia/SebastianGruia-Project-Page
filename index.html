@@ -5,6 +5,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Front-End developer and Photographer work">
 	<meta name="author" content="Sebastian Gruia">
+	
+	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
 		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Saira+Semi+Condensed&display=swap" rel="stylesheet">
@@ -13,6 +15,9 @@
 	<script src="https://kit.fontawesome.com/388729e045.js"></script>
 	<!--Css styles-->
 	<link rel="stylesheet" href="css/style.css">
+	<!-- Intro JS CSS -->
+	<!-- <link href="node_modules/intro.js/introjs.css" rel="stylesheet" type="text/css"> -->
+	<!-- <link href="node_modules/intro.js/themes/introjs-nassim.css" rel="stylesheet" type="text/css"> -->
 	<title>SebastianGruia</title>
 </head>
 
@@ -20,35 +25,44 @@
 
 
 	<header class="js-home">
-		<nav class="navbar  navbar-expand-lg navbar-dark  fixed-top">
-			<a href="#" class="navbar-brand"><img src="https://s26.postimg.cc/74p75o9ft/Logo_Sebastian_Gruia1.png"
-					alt="Name Sebastian Gruia"></a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
-				<span class="navbar-toggler-icon"></span>
 
-			</button>
-			<div class="collapse navbar-collapse" id="navbarCollapse">
-				<ul class="navbar-nav ml-auto">
-					<li class="navbar-item">
-						<a href="#" class="bn nav-link js--scroll-to-home">Home</a>
-					</li>
-					<li class="navbar-item">
-						<a href="#" class="bn nav-link js--scroll-to-developer">Front End Developer</a>
-					</li>
-					<li class="navbar-item">
-						<a href="#" class="bn nav-link js--scroll-to-photography">Photography</a>
-					</li>
-					<div class="favicons">
-						<li class="navbar-item"><a class="bn nav-link" target="_blank"
-								href="https://www.facebook.com/sebastian.gruia">
-								<i class="fab fa-facebook-f"></i></a></li>
-						<li class="navbar-item"><a class="bn nav-link" target="_blank"
-								href="https://www.instagram.com/sebastiangruia/"><i class="fab fa-instagram"></i></a>
+		<nav class="navbar  navbar-expand-lg navbar-dark fixed-top">
+			<div class="container">
+				<a href="#" class="navbar-brand"><img src="https://s26.postimg.cc/74p75o9ft/Logo_Sebastian_Gruia1.png"
+						alt="Name Sebastian Gruia"></a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+					<span class="navbar-toggler-icon"></span>
+
+				</button>
+				<div class="collapse navbar-collapse" id="navbarCollapse">
+					<ul class="navbar-nav ml-auto">
+						<li class="navbar-item">
+							<a href="#" data-intro="Home Sweet Home.Click for a Hot Tea." data-step="1" data-highlightClass="transparency" data-hint="" class="bn nav-link js--scroll-to-home">Home</a>
 						</li>
-					</div>
-				</ul>
+						<li class="navbar-item">
+							<a href="#" data-intro="My developer work" data-step="2" data-highlightClass="transparency" class="bn nav-link js--scroll-to-developer">Front End Developer</a>
+						</li>
+						<li class="navbar-item">
+							<a href="#" data-intro="My Photography Work" data-step="4" data-highlightClass="transparency" class="bn nav-link js--scroll-to-photography">Photography</a>
+						</li>
+						<div class="favicons">
+							<li class="navbar-item">
+								<a class="bn nav-link" data-intro="Facebook Profile" data-step="6" data-highlightClass="transparency" target="_blank"href="https://www.facebook.com/sebastian.gruia">
+									<i class="fab fa-facebook-f"></i>
+								</a>
+							</li>
+							<li class="navbar-item">
+								<a class="bn nav-link" data-intro="Instagram Profile" data-step="7" data-highlightClass="transparency" target="_blank" href="https://www.instagram.com/sebastiangruia/">
+									<i class="fab fa-instagram"></i>
+								</a>
+							</li>
+						</div>
+					</ul>
+				</div>
 			</div>
 		</nav>
+
+
 	</header>
 
 
@@ -67,7 +81,7 @@
 
 
 	<div class="row">
-		<section class="col  recent-projects-title">
+		<section class="col  recent-projects-title" >
 			<div class="recent-header">
 				<h1>Recent Projects</h1>
 				<hr>
@@ -77,102 +91,59 @@
 
 
 
-	<!-- <div class="row recent-projects-work ">
-		<div class="col-lg-4 col-md-12 ">
-			<div class="subsections subsection1">
-				<a href="http://omnifood.sebastiangruia.ro/" target="_blank"><img
-						src="https://s26.postimg.cc/z7d6czqw9/DSC_2883.jpg" alt="food on a dish" role="button"></a>
-				<a href="http://omnifood.sebastiangruia.ro/" target="_blank">
-					<h2 role="button">Omnifood</h2>
-				</a>
-				<hr>
-				<h4>Food delivery service</h4>
+
+	<div class="row recent-projects-work">
+		<div class="col-lg-3 col-md-12 ">
+			<div class="card subsections" data-intro="A coulpe of my projects" data-step="3" data-position="right">
+				<img src="https://i.postimg.cc/dtwxcyWp/creative-idea-512.png" class="card-img-top"
+					alt="a drawing representing a brain inside a light bulb">
+				<div class="card-body">
+					<h5 class="card-title">SmartBrain</h5>
+					<p class="card-text">A React app for recognizing faces in your pictures</p>
+					<a href="https://github.com/sebagruia/React-SmartBrain" class="btn btn-outline-warning">Source
+						Code</a>
+					<a href="https://sebagruia.github.io/React-SmartBrain/" class="btn btn-outline-warning"
+						target="_blank">Web Link</a>
+				</div>
 			</div>
-		</div>
+		</div><!-- end of col-->
 
-
-
-
-		<div class="col-lg-4 col-md-12 ">
-			<div class="subsections subsection2">
-				<a href="https://sebagruia.github.io/Project-3/" target="_blank"><img
-						src="img/ArcadeGame.png" alt="a picture of character from a 2D arcade game "
-						role="button"></a>
-				<a href="https://sebagruia.github.io/Project-3/" target="_blank">
-					<h2 role="button">Classic Arcade Game</h2>
-				</a>
-				<hr>
-				<h4>Game</h4>
+		<div class="col-lg-3 col-md-12 ">
+			<div class="card subsections">
+				<img src="https://i.postimg.cc/BZpv2RVz/arcade-joystick-joysticks-video-game-vintage-arcade-game-icon-51.png"
+					class="card-img-top" alt="A game PC">
+				<div class="card-body">
+					<h5 class="card-title">2D Arcade Game</h5>
+					<p class="card-text">A simple 2D Arcade Game</p>
+					<a href="https://github.com/sebagruia/Project-3" class="btn btn-outline-warning">Source Code</a>
+					<a href="https://sebagruia.github.io/Project-3/" class="btn btn-outline-warning" target="_blank">Web
+						Link</a>
+				</div>
 			</div>
-		</div>
-		
+		</div><!-- end of col-->
 
-
-		<div class=" col-lg-4 col-md-12 ">
-			<div class="subsections subsection3">
-				<a href="https://github.com/sebagruia" target="_blank"><img
-						src="https://s26.postimg.cc/3tw8s6c61/X1007154-min.jpg" alt="A cat on a car" role="button"></a>
-				<a href="https://github.com/sebagruia" target="_blank">
-					<h2 role="button">GitHub Profile</h2>
-				</a>
-				<hr>
-				<h4>FrontEnd </h4>
+		<div class="col-lg-3 col-md-12 ">
+			<div class="card subsections">
+				<img src="https://i.postimg.cc/Qxkxjwpm/postmates-share-image-9672924ea0390b5463f04664b04867d45837a47343.png"
+					class="card-img-top" alt="A table with different dishes ">
+				<div class="card-body">
+					<h5 class="card-title">Omnifood</h5>
+					<p class="card-text">A Food Delivery Site</p>
+					<a href="#" class="btn btn-outline-warning">Source Code</a>
+					<a href="http://omnifood.sebastiangruia.ro/" class="btn btn-outline-warning" target="_blank">Web
+						Link</a>
+				</div>
 			</div>
-		</div>
+		</div><!-- end of col-->
+	</div><!-- end of row-->
 
-
-	</div> -->
-
-
-	<div class="row recent-projects-work ">
-		<div class="col-lg-4 col-md-12 ">
-				<div class="card subsections">
-						<img src="https://i.postimg.cc/dtwxcyWp/creative-idea-512.png" class="card-img-top" alt="a drawing representing a brain inside a light bulb">
-						<div class="card-body">
-						  <h5 class="card-title">SmartBrain</h5>
-						  <p class="card-text">A React app for recognizing faces in your pictures</p>
-						  <a href="https://github.com/sebagruia/React-SmartBrain" class="btn btn-outline-warning">Source Code</a>
-						  <a href="https://sebagruia.github.io/React-SmartBrain/" class="btn btn-outline-warning" target="_blank">Web Link</a>
-						</div>
-					  </div>
-		</div>
-
-		<div class="col-lg-4 col-md-12 ">
-				<div class="card subsections">
-						<img src="https://i.postimg.cc/BZpv2RVz/arcade-joystick-joysticks-video-game-vintage-arcade-game-icon-51.png" class="card-img-top" alt="A game PC">
-						<div class="card-body">
-						  <h5 class="card-title">2D Arcade Game</h5>
-						  <p class="card-text">A simple 2D Arcade Game</p>
-						  <a href="https://github.com/sebagruia/Project-3" class="btn btn-outline-warning">Source Code</a>
-						  <a href="https://sebagruia.github.io/Project-3/" class="btn btn-outline-warning" target="_blank">Web Link</a>
-						</div>
-					  </div>
-		</div>
-
-		<div class="col-lg-4 col-md-12 ">
-				<div class="card subsections">
-						<img src="https://i.postimg.cc/Qxkxjwpm/postmates-share-image-9672924ea0390b5463f04664b04867d45837a47343.png" class="card-img-top" alt="A table with different dishes ">
-						<div class="card-body">
-						  <h5 class="card-title">Omnifood</h5>
-						  <p class="card-text">A Food Delivery Site</p>
-						  <a href="#" class="btn btn-outline-warning">Source Code</a>
-						  <a href="http://omnifood.sebastiangruia.ro/" class="btn btn-outline-warning" target="_blank">Web Link</a>
-						</div>
-					  </div>
-		</div><!-- end of row-->
-		
-
-
-
-	</div>
-
-	<div class="container-fluid">
+	<div class="container-fluid ">
 		<div class="row">
 			<section class=" col photography-section  js-photography">
 
 				<div class="row">
-					<div class=" col-xl-3 col-lg-3 col-md-6 col2 js--section-features">
-						<div class="col-text coltext1">
+					<div class=" col-xl-3 col-lg-3 col-md-6 col2 js--section-features" >
+						<div class="col-text coltext1" data-intro="My photographic Eye" data-step="5">
 							<h3>Photography</h3>
 							<hr>
 							<h5>There are different photographic <br>areas that I like to explore: Street,<br>
@@ -306,7 +277,7 @@
 	<!--end-of-container-flex-->
 
 
-
+	<!-- <script src="node_modules/intro.js/intro.js"></script> -->
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
 		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
 	</script>
