@@ -38,7 +38,6 @@ header {
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-attachment: fixed;
 	height: 100vh;
 }
 
@@ -693,7 +692,7 @@ header {
 
 @media screen and (min-width: 1400px) {
 	header {
-		/* background-attachment: fixed; */
+		background-attachment: fixed;
 	}
 
 	.web-developer .text-box {
