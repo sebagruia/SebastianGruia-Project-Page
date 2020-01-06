@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Front-End developer and Photographer work">
 	<meta name="author" content="Sebastian Gruia">
-	
+
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
 		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -15,6 +15,8 @@
 	<script src="https://kit.fontawesome.com/388729e045.js"></script>
 	<!--Css styles-->
 	<link rel="stylesheet" href="css/style.css">
+	<!--Animate Css library-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 	<!-- Intro JS CSS -->
 	<!-- <link href="node_modules/intro.js/introjs.css" rel="stylesheet" type="text/css"> -->
 	<!-- <link href="node_modules/intro.js/themes/introjs-nassim.css" rel="stylesheet" type="text/css"> -->
@@ -37,32 +39,39 @@
 				<div class="collapse navbar-collapse" id="navbarCollapse">
 					<ul class="navbar-nav ml-auto">
 						<li class="navbar-item">
-							<a href="#" data-intro="Home Sweet Home.Click for a Hot Tea." data-step="1" data-highlightClass="transparency" data-hint="" class="bn nav-link js--scroll-to-home">Home</a>
+							<a href="#" data-intro="Home Sweet Home.Click for a Hot Tea." data-step="1"
+								data-highlightClass="transparency" data-hint=""
+								class="bn nav-link js--scroll-to-home">Home</a>
 						</li>
 						<li class="navbar-item">
-							<a href="#" data-intro="My developer work" data-step="2" data-highlightClass="transparency" class="bn nav-link js--scroll-to-developer">Front End Developer</a>
+							<a href="#" data-intro="My developer work" data-step="2" data-highlightClass="transparency"
+								class="bn nav-link js--scroll-to-developer">Front End Developer</a>
 						</li>
 						<li class="navbar-item">
-							<a href="#" data-intro="My Photography Work" data-step="4" data-highlightClass="transparency" class="bn nav-link js--scroll-to-photography">Photography</a>
+							<a href="#" data-intro="My Photography Work" data-step="4"
+								data-highlightClass="transparency"
+								class="bn nav-link js--scroll-to-photography">Photography</a>
 						</li>
 						<div class="favicons">
 							<li class="navbar-item">
-								<a class="bn nav-link" data-intro="Facebook Profile" data-step="6" data-highlightClass="transparency" target="_blank"href="https://www.facebook.com/sebastian.gruia">
+								<a class="bn nav-link" data-intro="Facebook Profile" data-step="6"
+									data-highlightClass="transparency" target="_blank"
+									href="https://www.facebook.com/sebastian.gruia">
 									<i class="fab fa-facebook-f"></i>
 								</a>
 							</li>
 							<li class="navbar-item">
-								<a class="bn nav-link" data-intro="Instagram Profile" data-step="7" data-highlightClass="transparency" target="_blank" href="https://www.instagram.com/sebastiangruia/">
+								<a class="bn nav-link" data-intro="Instagram Profile" data-step="7"
+									data-highlightClass="transparency" target="_blank"
+									href="https://www.instagram.com/sebastiangruia/">
 									<i class="fab fa-instagram"></i>
 								</a>
 							</li>
 						</div>
 					</ul>
 				</div>
-			</div>
+			</div><!-- end of container-->
 		</nav>
-
-
 	</header>
 
 
@@ -81,7 +90,7 @@
 
 
 	<div class="row">
-		<section class="col  recent-projects-title" >
+		<section class="col  recent-projects-title">
 			<div class="recent-header">
 				<h1>Recent Projects</h1>
 				<hr>
@@ -91,58 +100,137 @@
 
 
 
+	<div class="container-fluid recent-projects">
+		<div class="row">
+			<div class="col">
+				<ul class="nav">
+					<li class="nav-item">
+						<p class="nav-link active" role="button">All</p>
+					</li>
+					<li class="nav-item">
+						<p class="nav-link" role="button">React Apps</p>
+					</li>
+					<li class="nav-item">
+						<p class="nav-link" role="button">Javascript/Html/Css</p>
+					</li>
+				</ul>
+			</div><!-- end of col-->
+		</div><!-- end of row-->
 
-	<div class="row recent-projects-work">
-		<div class="col-lg-3 col-md-12 ">
-			<div class="card subsections" data-intro="A coulpe of my projects" data-step="3" data-position="right">
-				<img src="https://i.postimg.cc/dtwxcyWp/creative-idea-512.png" class="card-img-top"
-					alt="a drawing representing a brain inside a light bulb">
-				<div class="card-body">
-					<h5 class="card-title">SmartBrain</h5>
-					<p class="card-text">A React app for recognizing faces in your pictures</p>
-					<a href="https://github.com/sebagruia/React-SmartBrain" class="btn btn-outline-warning">Source
-						Code</a>
-					<a href="https://sebagruia.github.io/React-SmartBrain/" class="btn btn-outline-warning"
-						target="_blank">Web Link</a>
-				</div>
-			</div>
-		</div><!-- end of col-->
 
-		<div class="col-lg-3 col-md-12 ">
-			<div class="card subsections">
-				<img src="https://i.postimg.cc/BZpv2RVz/arcade-joystick-joysticks-video-game-vintage-arcade-game-icon-51.png"
-					class="card-img-top" alt="A game PC">
-				<div class="card-body">
-					<h5 class="card-title">2D Arcade Game</h5>
-					<p class="card-text">A simple 2D Arcade Game</p>
-					<a href="https://github.com/sebagruia/Project-3" class="btn btn-outline-warning">Source Code</a>
-					<a href="https://sebagruia.github.io/Project-3/" class="btn btn-outline-warning" target="_blank">Web
-						Link</a>
-				</div>
-			</div>
-		</div><!-- end of col-->
+		<div class="row recent-projects-work recent-projects-work-1">
+			<div class="col-md-12">
+				<div class="row">
+					<div class="col-lg-3 col-sm-6 ">
+						<div class="card subsections animated react" data-intro="A coulpe of my projects" data-step="3"
+							data-position="right">
+							<img src="https://i.postimg.cc/dtwxcyWp/creative-idea-512.png" class="card-img-top"
+								alt="a drawing representing a brain inside a light bulb">
+							<div class="card-body">
+								<h5 class="card-title">SmartBrain</h5>
+								<p class="card-text">Face Recognition App</p>
+								<a href="https://github.com/sebagruia/React-SmartBrain"
+									class="btn btn-outline-warning">Source
+									Code</a>
+								<a href="https://sebagruia.github.io/React-SmartBrain/" class="btn btn-outline-warning"
+									target="_blank">Web Link</a>
+							</div>
+						</div>
+					</div><!-- end of col-->
 
-		<div class="col-lg-3 col-md-12 ">
-			<div class="card subsections">
-				<img src="https://i.postimg.cc/Qxkxjwpm/postmates-share-image-9672924ea0390b5463f04664b04867d45837a47343.png"
-					class="card-img-top" alt="A table with different dishes ">
-				<div class="card-body">
-					<h5 class="card-title">Omnifood</h5>
-					<p class="card-text">A Food Delivery Site</p>
-					<a href="#" class="btn btn-outline-warning">Source Code</a>
-					<a href="http://omnifood.sebastiangruia.ro/" class="btn btn-outline-warning" target="_blank">Web
-						Link</a>
-				</div>
-			</div>
-		</div><!-- end of col-->
-	</div><!-- end of row-->
+					<div class="col-lg-3 col-sm-6 ">
+						<div class="card subsections animated javascript-html-css">
+							<img src="https://i.postimg.cc/BZpv2RVz/arcade-joystick-joysticks-video-game-vintage-arcade-game-icon-51.png"
+								class="card-img-top" alt="A game PC">
+							<div class="card-body">
+								<h5 class="card-title">Arcade Game</h5>
+								<p class="card-text">A simple Arcade Game</p>
+								<a href="https://github.com/sebagruia/Project-3" class="btn btn-outline-warning">Source
+									Code</a>
+								<a href="https://sebagruia.github.io/Project-3/" class="btn btn-outline-warning"
+									target="_blank">Web
+									Link</a>
+							</div>
+						</div>
+					</div><!-- end of col-->
+
+					<div class="col-lg-3 col-sm-6 ">
+						<div class="card subsections animated javascript-html-css">
+							<img src="https://i.postimg.cc/Qxkxjwpm/postmates-share-image-9672924ea0390b5463f04664b04867d45837a47343.png"
+								class="card-img-top" alt="A table with different dishes ">
+							<div class="card-body">
+								<h5 class="card-title">Omnifood</h5>
+								<p class="card-text">A Food Delivery Site</p>
+								<a href="#" class="btn btn-outline-warning">Source Code</a>
+								<a href="http://omnifood.sebastiangruia.ro/" class="btn btn-outline-warning"
+									target="_blank">Web
+									Link</a>
+							</div>
+						</div>
+					</div><!-- end of col-->
+
+					<div class="col-lg-3 col-sm-6 ">
+						<div class="card subsections animated react">
+							<img src="https://i.postimg.cc/8s8jsYzc/toDoList.png" class="card-img-top"
+								alt="A table with different dishes ">
+							<div class="card-body">
+								<h5 class="card-title">ToDoList</h5>
+								<p class="card-text">A ToDo List App</p>
+								<a href="https://github.com/sebagruia/React---ToDoList"
+									class="btn btn-outline-warning">Source Code</a>
+								<a href="https://sebagruia.github.io/React---ToDoList/" class="btn btn-outline-warning"
+									target="_blank">Web
+									Link</a>
+							</div>
+						</div>
+					</div><!-- end of col-->
+
+
+
+					<!-- <div class="row recent-projects-work recent-projects-work-2"> -->
+					<div class="col-lg-3 col-sm-6 ">
+						<div class="card subsections animated react">
+							<img src="https://i.postimg.cc/KvWwCWx3/Tic-Tac-Toe-512x512.png" class="card-img-top"
+								alt="A table with different dishes ">
+							<div class="card-body">
+								<h5 class="card-title">Tic Tac Toe</h5>
+								<p class="card-text">Tic Tac Toe game</p>
+								<a href="https://github.com/sebagruia/React---ToDoList"
+									class="btn btn-outline-warning">Source Code</a>
+								<a href="https://sebagruia.github.io/React---ToDoList/" class="btn btn-outline-warning"
+									target="_blank">Web
+									Link</a>
+							</div>
+						</div>
+					</div><!-- end of col-->
+
+					<div class="col-lg-3 col-sm-6 ">
+						<div class="card subsections animated javascript-html-css">
+							<img src="https://i.postimg.cc/nLrsMMNP/memory-game512x512.png" class="card-img-top"
+								alt="A table with different dishes ">
+							<div class="card-body">
+								<h5 class="card-title">Memory Game</h5>
+								<p class="card-text">Memory Game</p>
+								<a href="https://github.com/sebagruia/Project-2" class="btn btn-outline-warning">Source
+									Code</a>
+								<a href="https://sebagruia.github.io/Project-2/" class="btn btn-outline-warning"
+									target="_blank">Web
+									Link</a>
+							</div>
+						</div>
+					</div><!-- end of col-->
+				</div><!-- end of row-->
+			</div><!-- end of col-md-12-->
+		</div><!-- end of row-->
+	</div><!-- end of container-fluid-->
+
 
 	<div class="container-fluid ">
 		<div class="row">
 			<section class=" col photography-section  js-photography">
 
 				<div class="row">
-					<div class=" col-xl-3 col-lg-3 col-md-6 col2 js--section-features" >
+					<div class=" col-xl-3 col-lg-3 col-md-6 col2 js--section-features">
 						<div class="col-text coltext1" data-intro="My photographic Eye" data-step="5">
 							<h3>Photography</h3>
 							<hr>

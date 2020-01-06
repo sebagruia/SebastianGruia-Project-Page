@@ -5,9 +5,7 @@
 	box-sizing: border-box;
 }
 
-.transparency{
-	opacity:0.1;
-}
+
 
 html {
 	position: relative;
@@ -16,6 +14,22 @@ html {
 body {
 	position: relative;
 	font-family: "Open Sans", "lucida console", monospace;
+}
+
+/* Classes used in app.js */
+.transparency {
+	opacity: 0.1;
+}
+
+.active {
+	text-decoration: underline #e6b800!important;
+	font-size: 20px;
+	color: #000!important;
+	line-height: 25px;
+}
+
+.hidden{
+	display:none;
 }
 
 /*GENERAL*/
@@ -38,6 +52,7 @@ header {
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
+	width: 100%;
 	height: 100vh;
 }
 
@@ -202,15 +217,32 @@ header {
 }
 
 
+
 /* Recent-projects */
+
+.recent-projects {
+	background: #f2f2f2;
+}
+
+.recent-projects .nav {
+	padding-left: 20px;
+	margin-bottom: 20px;
+	color: #666666;
+	font-size: 17px;
+	font-family: sans-serif;
+}
+.recent-projects .nav p {
+	color: #666666;
+	cursor:pointer;
+}
+.recent-projects .nav p:hover {
+	text-decoration: underline #e6b800;
+}
 
 .recent-projects-title {
 	background: #f2f2f2;
 	text-align: center;
 	padding-top: 8%;
-
-
-
 }
 
 .recent-projects-title .recent-header {
@@ -236,15 +268,21 @@ header {
 .recent-projects-work {
 	background: #f2f2f2;
 	text-align: center;
-	padding-bottom: 150px;
 
+}
+
+.recent-projects-work-1{
+	padding-bottom: 15px;
+}
+.recent-projects-work-2{
+	padding-bottom: 50px;
 }
 
 .recent-projects-work .subsections img {
 	margin: 0 auto;
 	width: 100%;
 	opacity: 0.8;
-	border-radius:5px;
+	border-radius: 5px;
 	-webkit-transform: scale(1);
 	transform: scale(1);
 	-webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
@@ -265,7 +303,7 @@ header {
 
 .recent-projects-work .subsections {
 	margin: 0 auto;
-	padding-top: 20px;
+	margin-bottom: 10px;
 	text-align: center;
 	width: 80%;
 
@@ -279,12 +317,12 @@ header {
 	font-family: sans-serif;
 }
 
-.recent-projects-work .card .card-body h5{
-	margin-top: 12px!important;
+.recent-projects-work .card .card-body h5 {
+	margin-top: 12px !important;
 	margin-bottom: 12px;
-	color: #666666!important;
-	font-size: 25px!important;
-	font-family: sans-serif!important;
+	color: #666666 !important;
+	font-size: 25px !important;
+	font-family: sans-serif !important;
 }
 
 .recent-projects-work .subsections hr {
@@ -408,7 +446,7 @@ header {
 .form-control {
 	text-align: left;
 	width: 80%;
-    margin-left: 20%;
+	margin-left: 20%;
 }
 
 #about-me-section {

@@ -1,8 +1,6 @@
-
-  
 $(document).ready(function () {
 
-   
+
     /*Scroll on buttons using Jquery*/
     $('.js--scroll-to-home').click(function () {
 
@@ -31,11 +29,12 @@ $(document).ready(function () {
 
 });
 
-document.addEventListener('DOMContentLoaded', (ev1) => {
-     /*Calls the Intro.Js plugin to the Page*/
+document.addEventListener('DOMContentLoaded', () => {
+    /*Calls the Intro.Js plugin to the Page*/
     //  introJs().start();
     //  introJs.fn.oncomplete(function() { document.querySelector('.navbar').classList.add('.fixed-top')});
-    
+
+    //===== Form Animation =======
     console.log('DOM loaded');
     const up = document.querySelector('.move-up');
     const down = document.querySelector('.move-down');
@@ -46,29 +45,24 @@ document.addEventListener('DOMContentLoaded', (ev1) => {
     const textArea = document.querySelector('.textarea');
     const formInput = document.querySelectorAll('.form-control');
 
-    function bringContactFormUp(){
+    function bringContactFormUp() {
         contactUp.setAttribute('style', 'bottom:0px; transition: bottom 0.8s; -webkit-transition:bottom 0.8s; transition-timing-function:ease; -webkit-transition-timing-function:ease;');
-
     }
-    function bringContactFormDown(){
+
+    function bringContactFormDown() {
         contactUp.setAttribute('style', 'bottom:-1000px; transition: bottom 0.8s; -webkit-transition:bottom 0.8s; transition-timing-function:ease; -webkit-transition-timing-function:ease;');
-
     }
- 
-    function makeWidth20(event){
+
+    function makeWidth20(event) {
         event.target.setAttribute('style', 'width:20%; transition: width 0.5s; -webkit-transition: width 0.5s; transition-timing-function:ease; -webkit-transition-timing-function:ease; ');
-
-
     }
 
-     function contactTransition() {
-        up.addEventListener('click',bringContactFormUp);
-
-
-        down.addEventListener('click',bringContactFormDown);
+    function contactTransition() {
+        up.addEventListener('click', bringContactFormUp);
+        down.addEventListener('click', bringContactFormDown);
 
         for (let i = 0; i < 2; i++) {
-            doubleUp[i].addEventListener('click',bringContactFormUp);
+            doubleUp[i].addEventListener('click', bringContactFormUp);
             doubleDown[i].addEventListener('click', bringContactFormDown);
         }
     }
@@ -81,11 +75,63 @@ document.addEventListener('DOMContentLoaded', (ev1) => {
 
         textArea.addEventListener('click', () => {
             textArea.setAttribute('rows', '5');
-
         });
     }
 
+    //=============================================
+    
+
+    // Adds/Removes the 'active' class to the "li" in the 'recent-projects' 'nav'
+    // Filters the "Cards" according to their class Name
+    const activateLink = (event) => {
+        const recentProjectsLinks = document.querySelectorAll('.recent-projects .nav .nav-link');
+        const allCards = document.querySelectorAll('.card');
+
+        recentProjectsLinks.forEach((link) => {
+            link.addEventListener('click', (event)=>{
+                recentProjectsLinks.forEach((link)=>{
+                    link.classList.remove('active');
+                })
+                event.target.classList.add('active');
+                if(event.target.innerHTML === 'All'){
+                    allCards.forEach((card)=>{
+                        card.classList.remove('flipOutX','flipInX' );
+                        card.classList.add( 'flipInX');
+                    });
+                }
+                else if(event.target.innerHTML === 'React Apps'){
+                    allCards.forEach((card)=>{
+                        if(card.classList.contains('react')){
+                            card.classList.remove('flipOutX','flipInX' );
+                            card.classList.add('flipInX');
+                        }
+                        else{
+                            card.classList.remove('flipOutX','flipInX');
+                            card.classList.add('flipOutX');
+                        }
+                    });
+                }
+                else if(event.target.innerHTML === 'Javascript/Html/Css'){
+                    allCards.forEach((card)=>{
+                        if(card.classList.contains('javascript-html-css')){
+                            card.classList.remove('flipOutX','flipInX' );
+                            card.classList.add('flipInX');
+                        }
+                        else{
+                            card.classList.remove('flipOutX','flipInX');
+                            card.classList.add('flipOutX' );
+                            
+                        }
+                    });
+                }
+            });
+        });
+    }
+
+
     contactTransition();
     inputTransition();
+    activateLink();
+
 
 });
