@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Filters the "Cards" according to their class Name
     const activateLink = (event) => {
         const recentProjectsLinks = document.querySelectorAll('.recent-projects .nav .nav-link');
-        const allCards = document.querySelectorAll('.card');
+        const allCardsContainer = document.querySelectorAll('.card-container');
 
         recentProjectsLinks.forEach((link) => {
             link.addEventListener('click', (event) => {
@@ -93,37 +93,34 @@ document.addEventListener('DOMContentLoaded', () => {
                 })
                 event.target.classList.add('active');
                 if (event.target.innerHTML === 'All') {
-                    allCards.forEach((card) => {
-                        card.classList.remove('hidden');
-                        // card.classList.remove('flipOutX', 'flipInX');
-                        // card.classList.add('flipInX');
+                    allCardsContainer.forEach((cardContainer) => {
+                        cardContainer.classList.remove('hidden','flipInX','flipOutX');
+                        cardContainer.classList.add('flipInX');
                     });
                 }
                 else if (event.target.innerHTML === 'React Apps') {
-                    allCards.forEach((card) => {
-                        if (card.classList.contains('react')) {
-                            card.classList.remove('hidden');
-                            // card.classList.remove('flipOutX', 'flipInX');
-                            // card.classList.add('flipInX');
+                    allCardsContainer.forEach((cardContainer) => {
+                        if (cardContainer.classList.contains('react')) {
+                            // cardContainer.classList.remove('hidden');
+                            cardContainer.classList.remove('hidden','flipInX','flipOutX');
+                            cardContainer.classList.add('flipInX');
                         }
                         else {
-                            // card.classList.remove('flipOutX', 'flipInX');
-                            // card.classList.add('flipOutX');
-                            card.classList.add('hidden');
+                            cardContainer.classList.add('hidden','flipOutX');
+                            // cardContainer.classList.add('hidden');
                         }
                     });
                 }
                 else if (event.target.innerHTML === 'Javascript/Html/Css') {
-                    allCards.forEach((card) => {
-                        if (card.classList.contains('javascript-html-css')) {
-                            card.classList.remove('hidden');
-                            // card.classList.remove('flipOutX', 'flipInX');
-                            // card.classList.add('flipInX');
+                    allCardsContainer.forEach((cardContainer) => {
+                        if (cardContainer.classList.contains('javascript-html-css')) {
+                            // cardContainer.classList.remove('hidden');
+                            cardContainer.classList.remove('hidden','flipInX','flipOutX');
+                            cardContainer.classList.add('flipInX');
                         }
                         else {
-                            // card.classList.remove('flipOutX', 'flipInX');
-                            // card.classList.add('flipOutX');
-                            card.classList.add('hidden');
+                            cardContainer.classList.add('hidden','flipOutX');
+                            // cardContainer.classList.add('hidden');
 
                         }
                     });
