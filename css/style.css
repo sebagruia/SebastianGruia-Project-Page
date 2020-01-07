@@ -221,12 +221,14 @@ header {
 /* Recent-projects */
 
 .recent-projects {
+	/* position:relative; */
 	background: #f2f2f2;
 }
 
 .recent-projects .nav {
+	/* position: absolute; */
 	padding-left: 20px;
-	margin-bottom: 20px;
+	/* margin-bottom: 20px; */
 	color: #666666;
 	font-size: 17px;
 	font-family: sans-serif;
@@ -336,6 +338,11 @@ header {
 	margin-top: 12px;
 	color: #666666;
 	opacity: 0.6;
+}
+
+.recent-projects-work .subsections .btn{
+	padding: .375rem .35rem;
+	font-size: 0.9rem;
 }
 
 /* CONTACT */
@@ -457,8 +464,14 @@ header {
 
 #about-me-section h3 {
 	margin-bottom: 20px;
-	text-decoration: underline;
+}
 
+#about-me-section .my-name{
+	font-weight: 600;
+}
+
+#about-me-section .fa-download{
+	margin-right: 5px;
 }
 
 
@@ -467,6 +480,10 @@ header {
 /* Media Query */
 
 @media screen and (min-width:320px) {
+
+	header{
+		height: 30vh;
+	}
 	.navbar-toggler-icon {
 		width: 1.3em;
 		height: 1.3em;
@@ -508,7 +525,26 @@ header {
 		font-size: 22px;
 	}
 
+	.recent-projects .nav {
+		padding-left: 23px;
+		font-size: 13px;
+	}
 
+	.recent-projects .active {
+		font-size: 15px;
+		line-height: 18px;
+	}
+
+	.recent-projects .nav-link {
+		padding: .5rem 0.3rem;
+	}
+
+	#about-me-section {
+		margin-bottom: 100px;
+	}
+	#about-me-section h3 {
+		font-size:1.5em;
+	}
 	.contact-up {
 		overflow: scroll;
 	}
@@ -531,9 +567,16 @@ header {
 	.web-developer .text-box {
 		margin-left: 9%;
 	}
+
+	.recent-projects .nav {
+		padding-left: 58px;
+	}
 }
 
 @media screen and (min-width:380px) {
+	header {
+		height: 35vh;
+	}
 	.navbar .navbar-brand img {
 		width: 275px;
 	}
@@ -557,6 +600,10 @@ header {
 	t .web-developer .text-box h4 {
 		font-size: 11px;
 	}
+
+	.recent-projects .nav {
+		font-size: 14px;
+	}
 }
 
 @media screen and (min-width:400px) {
@@ -566,6 +613,9 @@ header {
 
 	.web-developer .text-box {
 		margin-left: 22%;
+	}
+	.recent-projects .nav {
+		padding-left: 74px;
 	}
 }
 
@@ -592,6 +642,16 @@ header {
 		font-size: 15px;
 	}
 
+	.recent-projects .nav {
+		font-size: 15px;
+		padding-left: 99px;
+	}
+
+	.recent-projects .active {
+		font-size: 18px;
+		line-height: 21px;
+	}
+
 }
 
 
@@ -616,6 +676,10 @@ header {
 		font-size: 13px;
 	}
 
+	.recent-projects .nav {
+		padding-left: 123px;
+	}
+
 }
 
 
@@ -633,13 +697,18 @@ header {
 		margin-left: 20%;
 		width: 80%;
 	}
-
+	.recent-projects .nav {
+		padding-left: 28px;
+	}
 
 }
 
 
 
 @media screen and (min-width: 768px) {
+	header {
+		height: 45vh;
+	}
 
 	.web-developer .text-box {
 		width: 540px;
@@ -656,9 +725,16 @@ header {
 		width: 53%;
 	}
 
+	.recent-projects .nav {
+		padding-left: 38px;
+	}
+
 }
 
 @media screen and (min-width:992px) {
+	header {
+		height: 50vh;
+	}
 	.photography-section .col-text h3 {
 		font-size: 20px;
 	}
@@ -716,6 +792,9 @@ header {
 
 
 @media screen and (min-width:1366px) {
+	header {
+		height: 70vh;
+	}
 	.web-developer .text-box {
 		margin-left: 58%;
 	}
@@ -731,6 +810,7 @@ header {
 @media screen and (min-width: 1400px) {
 	header {
 		background-attachment: fixed;
+		height: 100vh;
 	}
 
 	.web-developer .text-box {

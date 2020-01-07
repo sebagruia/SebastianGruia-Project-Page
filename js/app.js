@@ -1,5 +1,5 @@
-$(document).ready(function () {
 
+document.addEventListener('DOMContentLoaded', () => {
 
     /*Scroll on buttons using Jquery*/
     $('.js--scroll-to-home').click(function () {
@@ -27,9 +27,8 @@ $(document).ready(function () {
 
     });
 
-});
 
-document.addEventListener('DOMContentLoaded', () => {
+
     /*Calls the Intro.Js plugin to the Page*/
     //  introJs().start();
     //  introJs.fn.oncomplete(function() { document.querySelector('.navbar').classList.add('.fixed-top')});
@@ -79,7 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     //=============================================
-    
+
 
     // Adds/Removes the 'active' class to the "li" in the 'recent-projects' 'nav'
     // Filters the "Cards" according to their class Name
@@ -88,39 +87,39 @@ document.addEventListener('DOMContentLoaded', () => {
         const allCards = document.querySelectorAll('.card');
 
         recentProjectsLinks.forEach((link) => {
-            link.addEventListener('click', (event)=>{
-                recentProjectsLinks.forEach((link)=>{
+            link.addEventListener('click', (event) => {
+                recentProjectsLinks.forEach((link) => {
                     link.classList.remove('active');
                 })
                 event.target.classList.add('active');
-                if(event.target.innerHTML === 'All'){
-                    allCards.forEach((card)=>{
-                        card.classList.remove('flipOutX','flipInX' );
-                        card.classList.add( 'flipInX');
+                if (event.target.innerHTML === 'All') {
+                    allCards.forEach((card) => {
+                        card.classList.remove('flipOutX', 'flipInX');
+                        card.classList.add('flipInX');
                     });
                 }
-                else if(event.target.innerHTML === 'React Apps'){
-                    allCards.forEach((card)=>{
-                        if(card.classList.contains('react')){
-                            card.classList.remove('flipOutX','flipInX' );
+                else if (event.target.innerHTML === 'React Apps') {
+                    allCards.forEach((card) => {
+                        if (card.classList.contains('react')) {
+                            card.classList.remove('flipOutX', 'flipInX');
                             card.classList.add('flipInX');
                         }
-                        else{
-                            card.classList.remove('flipOutX','flipInX');
+                        else {
+                            card.classList.remove('flipOutX', 'flipInX');
                             card.classList.add('flipOutX');
                         }
                     });
                 }
-                else if(event.target.innerHTML === 'Javascript/Html/Css'){
-                    allCards.forEach((card)=>{
-                        if(card.classList.contains('javascript-html-css')){
-                            card.classList.remove('flipOutX','flipInX' );
+                else if (event.target.innerHTML === 'Javascript/Html/Css') {
+                    allCards.forEach((card) => {
+                        if (card.classList.contains('javascript-html-css')) {
+                            card.classList.remove('flipOutX', 'flipInX');
                             card.classList.add('flipInX');
                         }
-                        else{
-                            card.classList.remove('flipOutX','flipInX');
-                            card.classList.add('flipOutX' );
-                            
+                        else {
+                            card.classList.remove('flipOutX', 'flipInX');
+                            card.classList.add('flipOutX');
+
                         }
                     });
                 }
@@ -134,4 +133,16 @@ document.addEventListener('DOMContentLoaded', () => {
     activateLink();
 
 
+    // Background Parallax 
+    const header = document.querySelector('.js-home');
+    window.addEventListener('scroll', (e) => {
+            if (header.getAttribute("data-type") === 'background') {
+                const test = header.getAttribute('data-speed');
+                let yPos = -(window.pageYOffset / parseInt(test));
+                // Put together our final background position
+                let coords = `50% ${yPos}px`;
+                // Move the background
+                header.setAttribute("style", `background-position: ${coords};`);
+            }
+    });
 });
