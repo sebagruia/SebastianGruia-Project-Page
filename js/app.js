@@ -94,31 +94,36 @@ document.addEventListener('DOMContentLoaded', () => {
                 event.target.classList.add('active');
                 if (event.target.innerHTML === 'All') {
                     allCards.forEach((card) => {
-                        card.classList.remove('flipOutX', 'flipInX');
-                        card.classList.add('flipInX');
+                        card.classList.remove('hidden');
+                        // card.classList.remove('flipOutX', 'flipInX');
+                        // card.classList.add('flipInX');
                     });
                 }
                 else if (event.target.innerHTML === 'React Apps') {
                     allCards.forEach((card) => {
                         if (card.classList.contains('react')) {
-                            card.classList.remove('flipOutX', 'flipInX');
-                            card.classList.add('flipInX');
+                            card.classList.remove('hidden');
+                            // card.classList.remove('flipOutX', 'flipInX');
+                            // card.classList.add('flipInX');
                         }
                         else {
-                            card.classList.remove('flipOutX', 'flipInX');
-                            card.classList.add('flipOutX');
+                            // card.classList.remove('flipOutX', 'flipInX');
+                            // card.classList.add('flipOutX');
+                            card.classList.add('hidden');
                         }
                     });
                 }
                 else if (event.target.innerHTML === 'Javascript/Html/Css') {
                     allCards.forEach((card) => {
                         if (card.classList.contains('javascript-html-css')) {
-                            card.classList.remove('flipOutX', 'flipInX');
-                            card.classList.add('flipInX');
+                            card.classList.remove('hidden');
+                            // card.classList.remove('flipOutX', 'flipInX');
+                            // card.classList.add('flipInX');
                         }
                         else {
-                            card.classList.remove('flipOutX', 'flipInX');
-                            card.classList.add('flipOutX');
+                            // card.classList.remove('flipOutX', 'flipInX');
+                            // card.classList.add('flipOutX');
+                            card.classList.add('hidden');
 
                         }
                     });
