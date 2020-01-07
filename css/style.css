@@ -221,14 +221,12 @@ header {
 /* Recent-projects */
 
 .recent-projects {
-	/* position:relative; */
 	background: #f2f2f2;
+	padding-bottom: 50px;
 }
 
 .recent-projects .nav {
-	/* position: absolute; */
 	padding-left: 20px;
-	/* margin-bottom: 20px; */
 	color: #666666;
 	font-size: 17px;
 	font-family: sans-serif;
@@ -273,12 +271,6 @@ header {
 
 }
 
-.recent-projects-work-1{
-	padding-bottom: 15px;
-}
-.recent-projects-work-2{
-	padding-bottom: 50px;
-}
 
 .recent-projects-work .subsections img {
 	margin: 0 auto;
