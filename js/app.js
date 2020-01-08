@@ -94,33 +94,36 @@ document.addEventListener('DOMContentLoaded', () => {
                 event.target.classList.add('active');
                 if (event.target.innerHTML === 'All') {
                     allCardsContainer.forEach((cardContainer) => {
-                        cardContainer.classList.remove('hidden','flipInX','flipOutX');
-                        cardContainer.classList.add('flipInX');
+                            cardContainer.classList.remove('hidden', 'slide-in-blurred-top', 'slide-out-blurred-top' );
+                            cardContainer.classList.add('slide-in-blurred-top');
+                        
                     });
                 }
                 else if (event.target.innerHTML === 'React Apps') {
                     allCardsContainer.forEach((cardContainer) => {
                         if (cardContainer.classList.contains('react')) {
-                            // cardContainer.classList.remove('hidden');
-                            cardContainer.classList.remove('hidden','flipInX','flipOutX');
-                            cardContainer.classList.add('flipInX');
+                            cardContainer.classList.remove('hidden', 'slide-in-blurred-top', 'slide-out-blurred-top' );
+                            cardContainer.classList.add('slide-in-blurred-top');
                         }
                         else {
-                            cardContainer.classList.add('hidden','flipOutX');
-                            // cardContainer.classList.add('hidden');
+                            setTimeout(()=>{
+                                cardContainer.classList.add('hidden');
+                            },350);
+                            cardContainer.classList.add('slide-out-blurred-top');
                         }
                     });
                 }
                 else if (event.target.innerHTML === 'Javascript/Html/Css') {
                     allCardsContainer.forEach((cardContainer) => {
                         if (cardContainer.classList.contains('javascript-html-css')) {
-                            // cardContainer.classList.remove('hidden');
-                            cardContainer.classList.remove('hidden','flipInX','flipOutX');
-                            cardContainer.classList.add('flipInX');
+                            cardContainer.classList.remove('hidden', 'slide-in-blurred-top', 'slide-out-blurred-top' );
+                            cardContainer.classList.add('slide-in-blurred-top');
                         }
                         else {
-                            cardContainer.classList.add('hidden','flipOutX');
-                            // cardContainer.classList.add('hidden');
+                            setTimeout(()=>{
+                                cardContainer.classList.add('hidden');
+                            },350);
+                            cardContainer.classList.add('slide-out-blurred-top');
 
                         }
                     });
@@ -147,4 +150,15 @@ document.addEventListener('DOMContentLoaded', () => {
                 header.setAttribute("style", `background-position: ${coords};`);
             }
     });
+
+// Hamburger Functionality 
+
+const hamburger = document.querySelector('.hamburger');
+hamburger.addEventListener('click', ()=>{
+   
+        hamburger.classList.toggle('is-active');
+   
+
+});
+
 });

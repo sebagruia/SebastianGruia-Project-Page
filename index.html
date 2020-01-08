@@ -15,16 +15,12 @@
 	<script src="https://kit.fontawesome.com/388729e045.js"></script>
 	<!--Css styles-->
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/hamburger.css">
 	<!--Animate Css library-->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-	<!-- Intro JS CSS -->
-	<!-- <link href="node_modules/intro.js/introjs.css" rel="stylesheet" type="text/css"> -->
-	<!-- <link href="node_modules/intro.js/themes/introjs-nassim.css" rel="stylesheet" type="text/css"> -->
 	<title>SebastianGruia</title>
 </head>
 
 <body>
-
 
 	<header class="js-home" data-type="background" data-speed="5">
 
@@ -32,10 +28,14 @@
 			<div class="container">
 				<a href="#" class="navbar-brand"><img src="https://s26.postimg.cc/74p75o9ft/Logo_Sebastian_Gruia1.png"
 						alt="Name Sebastian Gruia"></a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+				<!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
 					<span class="navbar-toggler-icon"></span>
-
-				</button>
+				</button> -->
+				<button class="navbar-toggler hamburger hamburger--emphatic" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+					<span class="hamburger-box">
+					  <span class="hamburger-inner"></span>
+					</span>
+				  </button> 
 				<div class="collapse navbar-collapse" id="navbarCollapse">
 					<ul class="navbar-nav ml-auto">
 						<li class="navbar-item">
@@ -103,29 +103,29 @@
 
 
 	<div class="container-fluid recent-projects">
-		<div class="row">
-			<div class="col">
-				<ul class="nav">
-					<li class="nav-item">
-						<p class="nav-link active" role="button">All</p>
-					</li>
-					<li class="nav-item">
-						<p class="nav-link" role="button">React Apps</p>
-					</li>
-					<li class="nav-item">
-						<p class="nav-link" role="button">Javascript/Html/Css</p>
-					</li>
-				</ul>
-			</div><!-- end of col-->
-		</div><!-- end of row-->
-
-
 		<div class="row recent-projects-work">
-			<div class="col-md-12">
+
+			<div class=" col-md-8 offset-md-2">
 				<div class="row">
-					<div class="react card-container animated col-sm-6 col-md-4 col-lg-3">
+					<div class="col">
+						<ul class="nav">
+							<li class="nav-item">
+								<p class="nav-link active" role="button">All</p>
+							</li>
+							<li class="nav-item">
+								<p class="nav-link" role="button">React Apps</p>
+							</li>
+							<li class="nav-item">
+								<p class="nav-link" role="button">Javascript/Html/Css</p>
+							</li>
+						</ul>
+					</div><!-- end of col-->
+				</div><!-- end of row-->
+
+				<div class="row">
+					<div class="react card-container col-sm-6 col-lg-4 col-xl-3">
 						<div class="card subsections">
-							<img src="https://i.postimg.cc/dtwxcyWp/creative-idea-512.png" class="card-img-top"
+							<img src="https://i.postimg.cc/13Zm88hR/smartbrain312x312.png" class="card-img-top"
 								alt="a drawing representing a brain inside a light bulb">
 							<div class="card-body">
 								<h5 class="card-title">SmartBrain</h5>
@@ -138,9 +138,9 @@
 						</div>
 					</div><!-- end of col-->
 
-					<div class="javascript-html-css card-container animated col-sm-6 col-md-4 col-lg-3">
+					<div class="javascript-html-css card-container col-sm-6 col-lg-4 col-xl-3">
 						<div class="card subsections">
-							<img src="https://i.postimg.cc/BZpv2RVz/arcade-joystick-joysticks-video-game-vintage-arcade-game-icon-51.png"
+							<img src="https://i.postimg.cc/vHn88WKS/Arcade-312x312.png"
 								class="card-img-top" alt="A game PC">
 							<div class="card-body">
 								<h5 class="card-title">Arcade Game</h5>
@@ -152,9 +152,9 @@
 						</div>
 					</div><!-- end of col-->
 
-					<div class="javascript-html-css card-container animated col-sm-6 col-md-4 col-lg-3">
+					<div class="javascript-html-css card-container col-sm-6 col-lg-4 col-xl-3">
 						<div class="card subsections">
-							<img src="https://i.postimg.cc/Qxkxjwpm/postmates-share-image-9672924ea0390b5463f04664b04867d45837a47343.png"
+							<img src="https://i.postimg.cc/kG6Jb8gG/Omnifood312x312.png"
 								class="card-img-top" alt="A table with different dishes ">
 							<div class="card-body">
 								<h5 class="card-title">Omnifood</h5>
@@ -166,9 +166,9 @@
 						</div>
 					</div><!-- end of col-->
 
-					<div class="react card-container animated col-sm-6 col-md-4 col-lg-3">
+					<div class="react card-container col-sm-6 col-lg-4 col-xl-3">
 						<div class="card subsections">
-							<img src="https://i.postimg.cc/8s8jsYzc/toDoList.png" class="card-img-top"
+							<img src="https://i.postimg.cc/L8BHLm2t/to-Do-List312x312.png" class="card-img-top"
 								alt="A table with different dishes ">
 							<div class="card-body">
 								<h5 class="card-title">ToDoList</h5>
@@ -183,9 +183,9 @@
 
 
 
-					<div class=" react card-container animated col-sm-6 col-md-4 col-lg-3">
+					<div class=" react card-container col-sm-6 col-lg-4 col-xl-3">
 						<div class="card subsections">
-							<img src="https://i.postimg.cc/KvWwCWx3/Tic-Tac-Toe-512x512.png" class="card-img-top"
+							<img src="https://i.postimg.cc/Kcwvy90M/Tic-Tac-Toe-312x312.png" class="card-img-top"
 								alt="A table with different dishes ">
 							<div class="card-body">
 								<h5 class="card-title">Tic Tac Toe</h5>
@@ -198,9 +198,9 @@
 						</div>
 					</div><!-- end of col-->
 
-					<div class="javascript-html-css card-container animated col-sm-6 col-md-4 col-lg-3">
+					<div class="javascript-html-css card-container col-sm-6 col-lg-4 col-xl-3">
 						<div class="card subsections">
-							<img src="https://i.postimg.cc/nLrsMMNP/memory-game512x512.png" class="card-img-top"
+							<img src="https://i.postimg.cc/SRBy7snr/memory-game312x312.png" class="card-img-top"
 								alt="A table with different dishes ">
 							<div class="card-body">
 								<h5 class="card-title">Memory Game</h5>
@@ -357,8 +357,6 @@
 	</div>
 	<!--end-of-container-flex-->
 
-
-	<!-- <script src="node_modules/intro.js/intro.js"></script> -->
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
 		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
 	</script>
@@ -371,6 +369,7 @@
 	</script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="js/app.js"></script>
+
 </body>
 
 </html>
