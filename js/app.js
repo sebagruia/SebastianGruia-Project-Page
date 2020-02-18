@@ -128,6 +128,21 @@ document.addEventListener('DOMContentLoaded', () => {
                         }
                     });
                 }
+                else if (event.target.innerHTML === 'Wordpress') {
+                    allCardsContainer.forEach((cardContainer) => {
+                        if (cardContainer.classList.contains('wordpress')) {
+                            cardContainer.classList.remove('hidden', 'slide-in-blurred-top', 'slide-out-blurred-top' );
+                            cardContainer.classList.add('slide-in-blurred-top');
+                        }
+                        else {
+                            setTimeout(()=>{
+                                cardContainer.classList.add('hidden');
+                            },350);
+                            cardContainer.classList.add('slide-out-blurred-top');
+
+                        }
+                    });
+                }
             });
         });
     }
