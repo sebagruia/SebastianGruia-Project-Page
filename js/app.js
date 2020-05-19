@@ -1,6 +1,15 @@
 document.addEventListener("DOMContentLoaded", () => {
     /*Generating Projects and injecting them in "projects-container" div*/
     const projects = {
+        crownClothing: {
+            name: "CROWN Clothing",
+            appType: "react",
+            description: "E-Commerce App",
+            imageLink: "./img/crown.svg",
+            imageAlt: "a crown",
+            codeLink: "https://github.com/sebagruia/crown-clothing",
+            webLink: "https://crown-clothing-e.herokuapp.com/",
+        },
         theArtifact: {
             name: "The Artifact",
             appType: "react",
@@ -10,6 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
             codeLink: "https://github.com/sebagruia/The-Artifact",
             webLink: "https://the-artifact-icuxpypqw.now.sh/",
         },
+
         wouldYouRather: {
             name: "Would you rather?",
             appType: "react",
@@ -106,7 +116,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const projectsContainer = document.getElementById("projects-container");
         const allProjectsHtml = Object.values(projects)
             .map(
-                project =>
+                (project) =>
                     `<div class="${project.appType} card-container col-sm-6 col-lg-4 col-xl-3">
                         <div class="card subsections">
                             <img src="${project.imageLink}" class="card-img-top"
@@ -218,78 +228,68 @@ document.addEventListener("DOMContentLoaded", () => {
     // Adds/Removes the 'active' class to the "li" in the 'recent-projects' 'nav'
     // Filters the "Cards" according to their class Name
     const activateLink = (event) => {
+
         const recentProjectsLinks = document.querySelectorAll(
             ".recent-projects .nav .nav-link"
         );
         const allCardsContainer = document.querySelectorAll(".card-container");
 
-        recentProjectsLinks.forEach((link) => {
-            link.addEventListener("click", (event) => {
-                recentProjectsLinks.forEach((link) => {
-                    link.classList.remove("active");
-                });
-                event.target.classList.add("active");
-                if (event.target.innerHTML === "All") {
-                    allCardsContainer.forEach((cardContainer) => {
+        const removeClases = (cardsContainer, string, className, event) => {
+            if (event.target.innerHTML === string) {
+                cardsContainer.forEach((cardContainer) => {
+                    if (cardContainer.classList.contains(className)) {
                         cardContainer.classList.remove(
                             "hidden",
                             "slide-in-blurred-top",
                             "slide-out-blurred-top"
                         );
                         cardContainer.classList.add("slide-in-blurred-top");
-                    });
-                } else if (event.target.innerHTML === "React Apps") {
-                    allCardsContainer.forEach((cardContainer) => {
-                        if (cardContainer.classList.contains("react")) {
+                    } else {
+                        setTimeout(() => {
+                            cardContainer.classList.add("hidden");
+                        }, 350);
+                        cardContainer.classList.add("slide-out-blurred-top");
+                    }
+                });
+            }
+        };
+
+        recentProjectsLinks.forEach((link) => {
+            link.addEventListener("click", (event) => {
+
+                recentProjectsLinks.forEach((link) => {
+                    link.classList.remove("active");
+                });
+                event.target.classList.add("active");
+
+                switch (event.target.innerHTML) {
+                    case "All":
+                        allCardsContainer.forEach((cardContainer) => {
                             cardContainer.classList.remove(
                                 "hidden",
                                 "slide-in-blurred-top",
                                 "slide-out-blurred-top"
                             );
                             cardContainer.classList.add("slide-in-blurred-top");
-                        } else {
-                            setTimeout(() => {
-                                cardContainer.classList.add("hidden");
-                            }, 350);
-                            cardContainer.classList.add("slide-out-blurred-top");
-                        }
-                    });
-                } else if (event.target.innerHTML === "Javascript/Html/Css") {
-                    allCardsContainer.forEach((cardContainer) => {
-                        if (cardContainer.classList.contains("javascript-html-css")) {
-                            cardContainer.classList.remove(
-                                "hidden",
-                                "slide-in-blurred-top",
-                                "slide-out-blurred-top"
-                            );
-                            cardContainer.classList.add("slide-in-blurred-top");
-                        } else {
-                            setTimeout(() => {
-                                cardContainer.classList.add("hidden");
-                            }, 350);
-                            cardContainer.classList.add("slide-out-blurred-top");
-                        }
-                    });
-                } else if (event.target.innerHTML === "Wordpress") {
-                    allCardsContainer.forEach((cardContainer) => {
-                        if (cardContainer.classList.contains("wordpress")) {
-                            cardContainer.classList.remove(
-                                "hidden",
-                                "slide-in-blurred-top",
-                                "slide-out-blurred-top"
-                            );
-                            cardContainer.classList.add("slide-in-blurred-top");
-                        } else {
-                            setTimeout(() => {
-                                cardContainer.classList.add("hidden");
-                            }, 350);
-                            cardContainer.classList.add("slide-out-blurred-top");
-                        }
-                    });
+                        });
+                        break;
+                    case "React Apps":
+                        removeClases(allCardsContainer, "React Apps", "react", event);
+                        break;
+                    case "Javascript/Html/Css":
+                        removeClases(allCardsContainer, "Javascript/Html/Css", "javascript-html-css", event);
+                        break;
+                    case "Wordpress":
+                        removeClases(allCardsContainer, "Wordpress", "wordpress", event);
+                        break;
+                    default:
+                        console.log("Something Went Wrong in The Switch Statement");
                 }
             });
         });
     };
+
+
 
     contactTransition();
     inputTransition();
