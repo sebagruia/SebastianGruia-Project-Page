@@ -182,28 +182,28 @@ document.addEventListener("DOMContentLoaded", () => {
     const textArea = document.querySelector(".textarea");
     const formInput = document.querySelectorAll(".form-control");
 
-    function bringContactFormUp() {
+     const bringContactFormUp = ()=> {
         contactUp.setAttribute(
             "style",
             "bottom:0px; transition: bottom 0.8s; -webkit-transition:bottom 0.8s; transition-timing-function:ease; -webkit-transition-timing-function:ease;"
         );
     }
 
-    function bringContactFormDown() {
+    const bringContactFormDown = ()=>{
         contactUp.setAttribute(
             "style",
             "bottom:-1000px; transition: bottom 0.8s; -webkit-transition:bottom 0.8s; transition-timing-function:ease; -webkit-transition-timing-function:ease;"
         );
     }
 
-    function makeWidth20(event) {
+    const makeWidth20 = (event)=>{
         event.target.setAttribute(
             "style",
             "width:20%; transition: width 0.5s; -webkit-transition: width 0.5s; transition-timing-function:ease; -webkit-transition-timing-function:ease; "
         );
     }
 
-    function contactTransition() {
+    const contactTransition = ()=>{
         up.addEventListener("click", bringContactFormUp);
         down.addEventListener("click", bringContactFormDown);
 
@@ -213,7 +213,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
-    function inputTransition() {
+    const inputTransition = ()=>{
         for (let i = 0; i < 3; i++) {
             mask[i].addEventListener("mouseover", makeWidth20);
         }
