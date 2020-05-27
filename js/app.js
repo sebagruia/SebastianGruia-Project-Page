@@ -142,6 +142,12 @@ document.addEventListener("DOMContentLoaded", () => {
     /*Scroll on buttons using Jquery*/
     const hamburger = document.querySelector(".hamburger");
     const navbarCollapse = document.getElementById('navbarCollapse');
+    const activateHamburgerAndNavbarCollapse = ()=>{
+        hamburger.classList.toggle("is-active");
+        navbarCollapse.classList.toggle("show");
+        bringContactFormDown();
+    }
+
     $(".js--scroll-to-home").click(function () {
         $("html, body").animate(
             {
@@ -149,8 +155,7 @@ document.addEventListener("DOMContentLoaded", () => {
             },
             1000
         );
-        hamburger.classList.toggle("is-active");
-        navbarCollapse.classList.toggle("show");
+        activateHamburgerAndNavbarCollapse();
     });
 
     $(".js--scroll-to-photography").click(function () {
@@ -160,8 +165,7 @@ document.addEventListener("DOMContentLoaded", () => {
             },
             1000
         );
-        hamburger.classList.toggle("is-active");
-        navbarCollapse.classList.toggle("show");
+        activateHamburgerAndNavbarCollapse();
     });
 
     $(".js--scroll-to-developer").click(function () {
@@ -171,8 +175,7 @@ document.addEventListener("DOMContentLoaded", () => {
             },
             1000
         );
-        hamburger.classList.toggle("is-active");
-        navbarCollapse.classList.toggle("show");
+        activateHamburgerAndNavbarCollapse();
     });
 
 
