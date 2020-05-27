@@ -140,6 +140,8 @@ document.addEventListener("DOMContentLoaded", () => {
     generateProjectsHtml();
 
     /*Scroll on buttons using Jquery*/
+    const hamburger = document.querySelector(".hamburger");
+    const navbarCollapse = document.getElementById('navbarCollapse');
     $(".js--scroll-to-home").click(function () {
         $("html, body").animate(
             {
@@ -147,29 +149,32 @@ document.addEventListener("DOMContentLoaded", () => {
             },
             1000
         );
+        hamburger.classList.toggle("is-active");
+        navbarCollapse.classList.toggle("show");
     });
 
     $(".js--scroll-to-photography").click(function () {
         $("html, body").animate(
             {
-                scrollTop: $(".js-photography").offset().top,
+                scrollTop: $(".js-photography").offset().top -30,
             },
             1000
         );
+        hamburger.classList.toggle("is-active");
+        navbarCollapse.classList.toggle("show");
     });
 
     $(".js--scroll-to-developer").click(function () {
         $("html, body").animate(
             {
-                scrollTop: $(".js-developer").offset().top,
+                scrollTop: $(".js-developer").offset().top -50,
             },
             1000
         );
+        hamburger.classList.toggle("is-active");
+        navbarCollapse.classList.toggle("show");
     });
 
-    /*Calls the Intro.Js plugin to the Page*/
-    //  introJs().start();
-    //  introJs.fn.oncomplete(function() { document.querySelector('.navbar').classList.add('.fixed-top')});
 
     //===== Form Animation =======
     console.log("DOM loaded");
@@ -309,9 +314,8 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     // Hamburger Functionality
-
-    const hamburger = document.querySelector(".hamburger");
-    hamburger.addEventListener("click", () => {
-        hamburger.classList.toggle("is-active");
-    });
+        hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("is-active");
+        });
+    
 });
