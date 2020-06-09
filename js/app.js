@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
       imageLink: "./img/logo_black312x312.png",
       imageAlt: "a white cube",
       codeLink: "https://github.com/sebagruia/The-Artifact",
-      webLink: "https://the-artifact-icuxpypqw.now.sh/",
+      webLink: "https://the-artifact.now.sh/",
     },
 
     wouldYouRather: {
