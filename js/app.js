@@ -1,6 +1,15 @@
 document.addEventListener("DOMContentLoaded", () => {
   /*======Generating Projects and injecting them in "projects-container" div======*/
   const projects = {
+    cinematrix: {
+      name: "Cinematrix",
+      appType: "react",
+      description: "Movies App",
+      imageLink: "./img/cinematrixLogo.png",
+      imageAlt: "a crown",
+      codeLink: "https://github.com/sebagruia/Cinematrix",
+      webLink: "https://sebagruia.github.io/Cinematrix/",
+    },
     crownClothing: {
       name: "CROWN Clothing",
       appType: "react",
