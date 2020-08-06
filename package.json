@@ -4,7 +4,6 @@
   "description": "[The link to the LandingPage](https://sebagruia.github.io/SebastianGruia-Project-Page/)",
   "main": "server.js",
   "dependencies": {
-    "express": "^4.17.1",
     "intro.js": "^2.9.3"
   },
   "devDependencies": {},
