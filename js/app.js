@@ -1,12 +1,21 @@
 document.addEventListener("DOMContentLoaded", () => {
   /*======Generating Projects and injecting them in "projects-container" div======*/
   const projects = {
+    WebVideoPlayer: {
+      name: "WebVideoPlayer",
+      appType: "react",
+      description: "Movies App",
+      imageLink: "./img/webVideoPlayer.png",
+      imageAlt: "a videoplayer icon",
+      codeLink: "https://github.com/sebagruia/Video-Media-Player",
+      webLink: "https://sebagruia.github.io/Video-Media-Player/",
+    },
     cinematrix: {
       name: "Cinematrix",
       appType: "react",
       description: "Movies App",
       imageLink: "./img/cinematrixLogo.png",
-      imageAlt: "a crown",
+      imageAlt: "a movie player",
       codeLink: "https://github.com/sebagruia/Cinematrix",
       webLink: "https://sebagruia.github.io/Cinematrix/",
     },
