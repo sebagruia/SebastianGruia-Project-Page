@@ -1,6 +1,15 @@
 document.addEventListener("DOMContentLoaded", () => {
   /*======Generating Projects and injecting them in "projects-container" div======*/
   const projects = {
+    PhysioPraxis: {
+      name: "PhysioPraxis",
+      appType: "react",
+      description: "Website",
+      imageLink: "./img/physiopraxis.jpg",
+      imageAlt: "relaxation tools",
+      codeLink: "https://github.com/sebagruia/PhysioPraxis",
+      webLink: "https://sebagruia.github.io/PhysioPraxis/",
+    },
     WebVideoPlayer: {
       name: "WebVideoPlayer",
       appType: "react",
